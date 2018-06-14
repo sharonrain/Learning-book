@@ -1,6 +1,5 @@
 
-# MarkDown
----
+# MarkDown  
 ## 1.Link
 Windows编辑器：[MarkdownPad](http://www.markdownpad.com/)  
 网页版编辑器：[简书](https://www.jianshu.com/)  
@@ -121,7 +120,13 @@ Windows编辑器：[MarkdownPad](http://www.markdownpad.com/)
 - `---:` 代表右对齐  
 
 ### 2.11 换行
-每一行的结尾至少空两格
+每一行的结尾至少空两格  
+建立多级列表时，每个子级别都要比上个级别前面多打2个空格
+
+### 2.12 脚注
+Footnotes[^1] have a label[^2]  
+[^label]: A footnote on "label"  
+[^1]: This is a footnote
 
 ## 3.格式转换 
 ### 3.1 HTML文档
@@ -134,7 +139,7 @@ cd /path/to/file/
 pandoc -o hello.html hello.md     
 pandoc -o hello.html -c style.css hello.md
 ```
-### 3.1 HTML文档
+### 3.2 pdf文档
 #### MdCharm
 #### Pandoc
 `pandoc -o hello.pdf hello.md`
