@@ -20,10 +20,10 @@
 
 #### 2.1.3 .spread - 展开实例返回的结果数组
 类似调用.then方法，但执行成功后的值(fulfillment值)必须是一个数组  
-```.spread(
-  [function(any values...) fulfilledHandler]
-) -> Promise```  
-.spread()方法会隐式的调用.all()方法，而在ES6中要显式的调用
+	.spread(
+	  [function(any values...) fulfilledHandler]
+	) -> Promise
+.spread()方法会隐式的调用.all()方法，而在ES6中要显式的调用   
 
 #### 2.1.4 .catch - 实例异常处理方法
 捕获部分异常  
