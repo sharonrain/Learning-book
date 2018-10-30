@@ -1,8 +1,12 @@
 
 # Web Worker
+
 ## 1.Link
+
 [Web Worker 使用教程](http://www.ruanyifeng.com/blog/2018/07/web-worker.html)
+
 ## 2.Web Worker用法
+
 JavaScript 语言采用的是单线程模型，Web Worker 的作用，就是为 JavaScript 创造多线程环境，允许主线程创建 Worker 线程，将一些任务分配给后者运行。
 Pros:
 - 计算密集型或高延迟的任务，被 Worker 线程负担了
@@ -12,7 +16,9 @@ Cons:
 - Worker 线程一旦新建成功，就会始终运行
 - 比较耗费资源，不应该过度使用，而且一旦使用完毕，就应该关闭.
 
-### 2.1 注意点
+
+## 2.1 注意点
+
 1. 同源限制： Worker 线程运行的脚本文件必须与主线程的脚本文件同源。
 2. DOM 限制：
    - Worker 线程所在的全局对象，与主线程不一
