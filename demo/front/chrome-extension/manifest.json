@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "jQuery Checker",
+  "version": "1.0.0",
+  "description": "This extension verifies jQuery exists somewhere on this page",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Check to see if jQuery is on this page"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
