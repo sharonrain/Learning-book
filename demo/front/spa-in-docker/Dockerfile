@@ -1,9 +1,9 @@
 # ---- Base Node ----
-FROM node:alpine AS base
+# FROM node:alpine AS base
 # Copy project file
-COPY . .
+# COPY . .
 # Build project
-RUN npm run build
+# RUN npm run build
 # ---- Prod ----
 FROM nginx
 # Copy needed files
