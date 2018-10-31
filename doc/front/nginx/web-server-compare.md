@@ -1,8 +1,12 @@
 
 # Compare with Nginx/Apache/Lighttpd
+
 ## 1.Link
-[Link](http://www.blogjava.net/daniel-tu/archive/2008/12/29/248883.html)   
+
+[Link](http://www.blogjava.net/daniel-tu/archive/2008/12/29/248883.html)  
+
 ## 2.3种WEB服务器的比较
+
 | server         | Apache | Nginx  | Lighttpd |
 | -------------- | ------ | ------ | -------- |
 | Proxy代理      | 非常好 | 非常好 | 一般     |
@@ -19,6 +23,7 @@
 | Session sticky | 支持   | 不支持 | 不支持   |
 
 ## 3.Nginx优点
+
   Nginx是高性能的HTTP和反向代理服务器
 1. 性能好
     - 以事件驱动的方式编写，所以有非常好的性能
@@ -33,4 +38,3 @@
 3. Nginx支持热部署
     - 它的启动特别容易, 并且几乎可以做到7*24不间断运行
     - 支持不间断服务情况下对软件更新
-
