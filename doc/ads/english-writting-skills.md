@@ -1,6 +1,8 @@
 
 # English writing/communication skills
+
 ## 1. Think before write
+
 1. To write or not?
    - skype? communicate in face?
    - if write
@@ -16,6 +18,7 @@
        - using an appropriate tone
 
 ## 2. Writing Email
+
 1. the orders
    - Email body(text)
    - Subject
@@ -69,7 +72,9 @@
    - Be positive
    - Follow the pattern for dealing with negative issues
      - Positive subject-> positive purpose-> positive summary-> positive headings -> deal with negative issues -> positive and helpful ending
+
 ## 3. Examples
+
 1. Announce news
    - Subject: URGENT - Good news
    - Contents:
@@ -134,44 +139,44 @@
      - The attachment gives details under the heading of xxx
      - I would like to add some comments to the details in the attachment. 1,2,3...
      - I look forward to receiving your sign-off on the budget allocation proposal. If you need any further information, I would be happy to help.
-9.  Advice about new rules
+9. Advice about new rules
    - Subject: Important New Rules for Business Travellers
    - Contents:
      - This is to advise you about important new rules for business travellers
      - List of new rules
      - If you have any questions regarding the new rules, I shall be happy to answer them.
 10. Instructions
-   - Subject: Instructions to xxx
-   - Contents:
-     - Firstly thank you to every one of you for volunteering to take part in the meeting
-     - Secondly I would like to give some details to everyone so they know their reponsibilities and expectations for the meeting.
-     - xxx
+    - Subject: Instructions to xxx
+    - Contents:
+      - Firstly thank you to every one of you for volunteering to take part in the meeting
+      - Secondly I would like to give some details to everyone so they know their reponsibilities and expectations for the meeting.
+      - xxx
 11. Report
-   - This report investigates the problem and makes recommendations for its solution by replacing the problem parts with a complete new section
-   - **Background-big picture background**
-   - **Problem Evaluation -  current situation**
-   - **Investigation Findings - analysis and sonsequences**
-   - **Corrective Action - conclusions**
-   - **Action plan - next steps**
+    - This report investigates the problem and makes recommendations for its solution by replacing the problem parts with a complete new section
+    - **Background-big picture background**
+    - **Problem Evaluation -  current situation**
+    - **Investigation Findings - analysis and sonsequences**
+    - **Corrective Action - conclusions**
+    - **Action plan - next steps**
 12. A meeting record
-   - Meeting attendance
-   - Venue: xxx meeting xxx office
-   - Meeting time:
-   - Meeting content 1,2,3...
+    - Meeting attendance
+    - Venue: xxx meeting xxx office
+    - Meeting time:
+    - Meeting content 1,2,3...
 13. Give tasks
-   - Subject: Important- Your tasks for this urgent xxx
-   - Contents:
-     - This is to let you know that we need to start working urgently on the xxx
-     - Our job is to xxx and give a report on which is best and how to improve our xxx.
-     - The feature to be tested are xxx
-     - we have xxx people in the team, so each person will work on two features.
-     - I would like to announce the following work assignments
-     - If you have any questions, please contanct me and I shall be happy to answer them.
+    - Subject: Important- Your tasks for this urgent xxx
+    - Contents:
+      - This is to let you know that we need to start working urgently on the xxx
+      - Our job is to xxx and give a report on which is best and how to improve our xxx.
+      - The feature to be tested are xxx
+      - we have xxx people in the team, so each person will work on two features.
+      - I would like to announce the following work assignments
+      - If you have any questions, please contanct me and I shall be happy to answer them.
 14. Announcing
-   - Subject: Announcement of New CEO
-   - Content:
-     - **Simple summary** we are pleased to announce that xxx has accepted the appointment as xxx
-     - **Background** xxx joined the xxx as a senior manager in
-     - **Events leading to the appointment** The last 20 years xxx
-     - **Current situation**(hinting at the reason for the change)
-     - **Consequences**
+    - Subject: Announcement of New CEO
+    - Content:
+      - **Simple summary** we are pleased to announce that xxx has accepted the appointment as xxx
+      - **Background** xxx joined the xxx as a senior manager in
+      - **Events leading to the appointment** The last 20 years xxx
+      - **Current situation**(hinting at the reason for the change)
+      - **Consequences**

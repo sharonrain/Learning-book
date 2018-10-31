@@ -1,3 +1,5 @@
+# chrome extension
+
 1. all the extension depends on manifest.json
 2. we can set default page in manifest.json(popup.html)
 3. popup.html should not contain any javascript, it should link to separate js file(popup.js)
