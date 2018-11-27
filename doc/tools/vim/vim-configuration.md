@@ -1,6 +1,8 @@
 
 # Software Design
+
 ## 1.基础知识
+
 - 全局配置： /etc/vim/vimrc(or /etc/vimrc)
 - 用户配置： ~/.vamrc
 - 单次编辑启用某个配置项: :set number(关闭一般在前面加no, set nonumber)
@@ -8,6 +10,7 @@
 - 查看帮助： :help number
 
 ## 2.基本配置
+
 - set nocompatible 不与vi兼容（采用vim自己操作命令）
 - syntax on 打开语法高亮
 - set showmode 底部显示当前命令
@@ -17,14 +20,16 @@
 - filetype indent on 开启文件检查，载入与文件类型对应的缩进规则
   - 比如.py文件载入~/.vim/indent/python.vim
 
-**缩进**
+2.1 **缩进**
+
 - set autoindent 下一行的缩进自动和上一行一致
 - set tabstop=2 按下Tab键时Vim显示空格数
 - set shiftwidth=4 在文本上按下>>（增加一级缩进）、<<（取消一级缩进）或者==（取消全部缩进）时，每一级的字符数。
 - **set expandtab** 自动将Tab转化为空格
 - set softtabstop=2 Tab转化多少个空格
 
-**外观**
+2.2 **外观**
+
 - set number 显示行号
 - set relativenumber 显示光标所在行号，其他行为相对于改行的行号
 - set cursorline 光标所在的行高亮
@@ -35,14 +40,16 @@
 - set laststatus=2 是否显示状态栏。0 表示不显示，1 表示只在多窗口时显示，2 表示显示。
 - set ruler 在状态栏显示光标的当前位置
 
-**搜索**
+2.3 **搜索**
+
 - set showmatch 光标遇到圆括号、方括号、大括号时，自动高亮对应的另一个圆括号、方括号和大括号。
 - set hlsearch 搜索时，高亮显示匹配结果
 - set incsearch 输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
 - set ignorecase 搜索时忽略大小写。
 - set smartcase 如果同时打开了ignorecase，那么对于只有一个大写字母的搜索词，将大小写敏感；搜索Test时，将不匹配test；搜索test时，将匹配Test。
 
-**编辑**
+2.4 **编辑**
+
 - set spell spelllang=en_us 打开英语单词的拼写检查。
 - set nobackup 不创建备份文件。默认情况下，文件保存时，会额外创建一个备份文件
 - set noswapfile 不创建交换文件。交换文件主要用于系统崩溃时恢复文件，文件名的开头是.、结尾是.swp

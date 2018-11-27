@@ -31,6 +31,9 @@
 
 ## 2. MVVM vs Virtual Dom
 
+**MVVM**: 在模板中声明视图组件和状态的绑定，双向绑定引擎会在状态更新时候自动更新视图。  
+**Virtual Dom**: 状态发生变化，用模板引擎重新渲染整个视图，替换旧视图，virtual Dom只是在这个基础上增加一些特殊的步骤避免整颗DOM树的变更。
+
 1. Angular（脏检查）/knockout/Vue/Avalon（依赖收集） 均采用数据绑定，变化检查是数据层面的
    - 脏检查在数据量少的时候有些吃亏，但是依赖收集在初始化和数据变化时候都需要重新收集，数据量庞大时会产生一些消耗。
    - 在进行列表检查时候MVVM每一行都有viewmodel，所以肯定比react慢.
@@ -42,38 +45,25 @@
    - 小量数据更新 依赖搜集>>Virtual dom+优化(shouldComponentUpdate) > 脏检查 > Virtual DOM(无优化)
    - 大量数据更新 脏检查+优化 >= 依赖收集+优化 > Virtual DOM >> MVVM无优化
 
-## 3. vue卖点
+## 3. vue vs react
 
-1. 官方维护路由和状态管理类库
-2. 专注于性能表现
-3. 更低的学习成本，使用HTML
-4. 更少的模板
+1. vue卖点
 
-## 4. MVVM和Virtual Dom
+   - 官方维护路由和状态管理类库
+   - 专注于性能表现
+   - 更低的学习成本，使用HTML
+   - 更少的模板
 
-**MVVM**: 在模板中声明视图组件和状态的绑定，双向绑定引擎会在状态更新时候自动更新视图。  
-**Virtual Dom**: 状态发生变化，用末班引擎重新渲染整个视图，替换旧视图，virtual Dom只是在这个基础上增加一些特殊的步骤避免整颗DOM树的变更。
-
-DOM是很慢的，即使print一个简单的div，也很复杂。
-
-```js
-var div = document.createElement('div')
-var str = ""
-for (var key in div) {
-  str = str + key + " "
-}
-console.log(str)
-```
-
-DOM树上的结构，属性信息都可以很容易的用Javascript表示出来。我们可以通过这个Javascript对象来构建一颗真正的DOM树（Virtual DOM）
-
-Virtual Dom 实现
-
-- 用Js对象模拟DOM树
-- 比较两颗DOM树的差异（diff算法）
-  - Virtual DOM只会对同一个层级元素对比
-  - 深度优先遍历，记录差异
-  - 差异类型：替换，**移动**/删除/新增，修改属性，修改文本
-  - 其他情况都可以正常记录，当reorder的时候，可以通过节点移动来达到目的，而不是替换，替换开销很大（最小编辑距离问题，动态规划求解）
-- 将差异应用到真正的DOM树上
-  - 对DOM树进行深度优先遍历，找出节点差异，进行DOM操作
+2. React
+   - 开发风格
+     - React 推荐的做法是 JSX + inline style，也就是把 HTML 和 CSS 全都整进 JavaScript 了
+     - Vue 的默认 API 是以简单易上手为目标，推荐的是使用 webpack + vue-loader 的单文件组件格式
+   - 应用场景
+     - React 配合严格的 Flux 架构，适合超大规模多人协作的复杂项目
+     - Vue适应于对 DOM 进行很多自定义操作的项目
+   - Performance
+     - React 的 Virtual DOM 优化
+       - 手动添加 shouldComponentUpdate 来避免不需要的 vdom re-render
+       - Components 尽可能都用 pureRenderMixin，然后采用 Flux 结构 + Immutable.js。
+     - Vue 由于采用依赖追踪，默认就是优化状态：你动了多少数据，就触发多少更新，不多也不少。
+     - 超大量数据的首屏渲染速度上，React 有一定优势，因为 Vue 的渲染机制启动时候要做的工作比较多，而且 React 支持服务端渲染
