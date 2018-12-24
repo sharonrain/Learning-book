@@ -1,0 +1,9 @@
+ @import "./style/Authors.css";
+
+html, body, :global(#root) {
+  height: 100%;
+}
+
+h1, p {
+  font-family: Lato;
+}

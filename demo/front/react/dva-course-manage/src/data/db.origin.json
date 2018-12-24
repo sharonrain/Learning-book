@@ -1,0 +1,108 @@
+{
+    "courses": [
+      {
+        "id": "react-flux-building-applications",
+        "title": "Building Applications in React and Flux",
+        "watchHref": "http://www.pluralsight.com/courses/react-flux-building-applications",
+        "authorName": "Dan_Wahlin",
+        "length": "5:08",
+        "category": "JavaScript"
+      },
+      {
+        "id": "clean-code",
+        "title": "Clean Code: Writing Code for Humans",
+        "watchHref": "http://www.pluralsight.com/courses/writing-clean-code-humans",
+        "authorName": "Cory_House",
+        "length": "3:12",
+        "category": "Software Practices"
+      },
+      {
+        "id": "architecture",
+        "title": "Architecting Applications for the Real World",
+        "watchHref": "http://www.pluralsight.com/courses/architecting-applications-dotnet",
+        "authorName": "cory-house",
+        "length": "2:52",
+        "category": "Software Architecture"
+      },
+      {
+        "id": "career-reboot-for-developer-mind",
+        "title": "Becoming an Outlier: Reprogramming the Developer Mind",
+        "watchHref": "http://www.pluralsight.com/courses/career-reboot-for-developer-mind",
+        "authorName": "Scott_Allen",
+        "length": "2:30",
+        "category": "Career1"
+      }
+    ],
+    "authors": [
+      {
+        "id": 1,
+        "firstName": "Cory",
+        "lastName": "House",
+        "email": "Sincere@april.biz",
+        "website": "hildegard.org"
+      },
+      {
+        "id": 2,
+        "firstName": "Scott",
+        "lastName": "Allen",
+        "email": "Shanna@melissa.tv",
+        "website": "anastasia.net"
+      },
+      {
+        "id": 3,
+        "firstName": "Dan",
+        "lastName": "Wahlin",
+        "email": "Nathan@yesenia.net",
+        "website": "ramiro.info"
+      },
+      {
+        "id": 4,
+        "firstName": "Patricia",
+        "lastName": "Lebsack",
+        "email": "Julianne.OConner@kory.org",
+        "website": "kale.biz"
+      },
+      {
+        "id": 5,
+        "firstName": "Chelsey",
+        "lastName": "Dietrich",
+        "email": "Lucio_Hettinger@annie.ca",
+        "website": "demarco.info"
+      },
+      {
+        "id": 6,
+        "firstName": "Dennis",
+        "lastName": "Schulist",
+        "email": "Karley_Dach@jasper.info",
+        "website": "ola.org"
+      },
+      {
+        "id": 7,
+        "firstName": "Kurtis",
+        "lastName": "Weissnat",
+        "email": "Telly.Hoeger@billy.biz",
+        "website": "elvis.io4"
+      },
+      {
+        "id": 8,
+        "firstName": "Nicholas",
+        "lastName": "Runolfsdottir",
+        "email": "Sherwood@rosamond.me",
+        "website": "jacynthe.com"
+      },
+      {
+        "id": 9,
+        "firstName": "Glenna",
+        "lastName": "Reichert",
+        "email": "Chaim_McDermott@dana.io",
+        "website": "conrad.com"
+      },
+      {
+        "id": 10,
+        "firstName": "Clementina",
+        "lastName": "DuBuque",
+        "email": "Rey.Padberg@karina.biz",
+        "website": "ambrose.net"
+      }
+    ]
+  }
