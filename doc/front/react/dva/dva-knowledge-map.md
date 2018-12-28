@@ -26,6 +26,13 @@
    - redux-saga 把所有的业务逻辑都放到 saga 里，这样可以让 reducer, action 和 component 都很纯粹，干他们原本需要干的事情。
    - 前面两个在 action 需要组合、取消等操作时，会不好处理。且改变了action使得action变得不存了。
 
+```js
+yield sagaEffects.fork(function*() {
+    yield sagaEffects.take(`${model.namespace}/@@CANCEL_EFFECTS`);
+    yield sagaEffects.cancel(task);
+});
+```
+
 ### react-redux
 
 1. react-redux针对react开发了一个插件，提供了Provider和connect两个API
@@ -183,7 +190,14 @@
    - hashHistory: 使用 URL 中的 hash（#）部分去创建形如 example.com/#/some/path 的路由，无需服务器配置。
    - createMemoryHistory： 不会在地址栏被操作或读取
 
-### react-router
+### react-router 4
+
+#### react router 4 哲学
+
+1. 动态映射： React组件渲染是动态发生的，那么就让Route变成一个React组件，和其他组件一样被渲染
+
+
+### react-router dva
 
 1. dva基于 action 进行页面跳转
 
