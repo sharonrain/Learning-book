@@ -27,6 +27,7 @@
           echo "$newfile" >> rsync_file
           fi
         done
+    fi
     for rfile in $(cat rsync_file)
     do
     rsync -avzp $rfile /home/www3/
