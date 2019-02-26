@@ -6,37 +6,37 @@
 > 宏定义的一些符号
 
 ### 代码样例
-  // 工厂类头文件 object_factory.h
-  #ifndef _OBJECT_FACTORY_H
-  #defINE _OBJECT_FACTORY_H
-  #include <functional>
-  #include <unordered_map>
-  #include <string>
-  // 定义每个工厂类的instance函数,返回对象的无参数的函数
-  typedef std::function<void *()> GetObjectFunction;
-  // 定义映射表，用于存储名字到函数的映射，从而可以通过名字找到函数，然后通过函数生成对象
-  class ObjectFactory {
-    public:
-      static std::unordered_map<std::string, GetObjectFunction>& Registery() {
-        static std::unordered_map<std::string, GetObjectFunction> ins;
-        return ins;
-      }
-  }
-  
-  // 定义注册类
-  class OjectRegister {
-    public:
-      OjectRegister(const std::string name, GetObjectFunction&& func) {
-        auto& map = ObjectFactory.Registery();
-        auto& val = map\[str\];
-        if (!val) {
-          cout << name << " has not been registered";
-        }
-        val = std::move(func);
-      }
-  }
-  #define REGISTER_OBJECT_FUNC(name, func) static OjectRegister __register__##name (#name, func)
-  #endif
+  // 工厂类头文件 object_factory.h  
+  #ifndef _OBJECT_FACTORY_H  
+  #defINE _OBJECT_FACTORY_H  
+  #include \<functional\>  
+  #include \<unordered_map\>  
+  #include \<string\>  
+  // 定义每个工厂类的instance函数,返回对象的无参数的函数  
+  typedef std::function<void *\(\)\> GetObjectFunction;  
+  // 定义映射表，用于存储名字到函数的映射，从而可以通过名字找到函数，然后通过函数生成对象  
+  class ObjectFactory \{  
+    public:  
+      static std::unordered_map\<std::string, GetObjectFunction\>& Registery() \{  
+        static std::unordered_map\<std::string, GetObjectFunction\> ins;  
+        return ins;  
+      \}  
+  \}  
+    
+  // 定义注册类  
+  class OjectRegister \{  
+    public:  
+      OjectRegister(const std::string name, GetObjectFunction&& func) \{  
+        auto& map = ObjectFactory.Registery();  
+        auto& val = map\[str\];  
+        if (!val) \{  
+          cout << name << " has not been registered";  
+        \}  
+        val = std::move(func);  
+      \}  
+  \}  
+  #define REGISTER_OBJECT_FUNC(name, func) static OjectRegister __register__##name (#name, func)  
+  #endif  
   
     
   
